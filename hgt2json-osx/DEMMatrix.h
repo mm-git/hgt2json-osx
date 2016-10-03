@@ -1,0 +1,41 @@
+//============================================================================
+// Name        : DEMMatrix.h
+// Author      : mm
+// Copyright   : This codes are licensed under the MIT license.
+// Create      : 2011/11/04
+// Description :
+//============================================================================
+#ifndef DEMMATRIX_H_
+#define DEMMATRIX_H_
+
+#include "CommonInclude.h"
+#include "HGTReader.h"
+
+class DEMMatrix {
+public:
+	DEMMatrix();
+	virtual ~DEMMatrix();
+
+private:
+	struct demFileMatrix {
+		std::string		fileName;
+		HGTReader*      pHGTData;
+	};
+	demFileMatrix demFileMatrix[180][360];	// 0-180:S90-S01,N00-N90 , 0-360:W180-W001,E000-E179
+	long demFileCount;
+
+public:
+	bool readDEMFolder(std::string&		inputFolder);
+	bool convertToJson(std::string&		inputFolder,
+					   std::string&		outputFolder,
+					   unsigned long		smoothingCount,
+                       long             dctRadius,
+					   bool				fullConvert);
+	bool writeArea(std::string&			outputFolder);
+
+private:
+	bool isExistOutput(std::string&		outputFolder,
+					   std::string&		demFile);
+};
+
+#endif /* DEMMATRIX_H_ */

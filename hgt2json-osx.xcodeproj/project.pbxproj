@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		8D8781D21DA1EBE700660BA5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D8781D11DA1EBE700660BA5 /* main.cpp */; };
+		8D8781E61DA1EC0E00660BA5 /* AltitudeMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D8781D81DA1EC0E00660BA5 /* AltitudeMatrix.cpp */; };
+		8D8781E71DA1EC0E00660BA5 /* CommandLine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D8781DA1DA1EC0E00660BA5 /* CommandLine.cpp */; };
+		8D8781E81DA1EC0E00660BA5 /* Dct.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D8781DD1DA1EC0E00660BA5 /* Dct.cpp */; };
+		8D8781E91DA1EC0E00660BA5 /* DEMMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D8781DF1DA1EC0E00660BA5 /* DEMMatrix.cpp */; };
+		8D8781EA1DA1EC0E00660BA5 /* GeoTiffReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D8781E11DA1EC0E00660BA5 /* GeoTiffReader.cpp */; };
+		8D8781EB1DA1EC0E00660BA5 /* HGTReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D8781E31DA1EC0E00660BA5 /* HGTReader.cpp */; };
+		8D8781EE1DA1EC4600660BA5 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8781ED1DA1EC4600660BA5 /* Accelerate.framework */; };
+		8D8781F21DA1EC6E00660BA5 /* libboost_filesystem.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8781EF1DA1EC6E00660BA5 /* libboost_filesystem.dylib */; };
+		8D8781F31DA1EC6E00660BA5 /* libboost_regex.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8781F01DA1EC6E00660BA5 /* libboost_regex.dylib */; };
+		8D8781F41DA1EC6E00660BA5 /* libboost_system.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8781F11DA1EC6E00660BA5 /* libboost_system.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +35,24 @@
 /* Begin PBXFileReference section */
 		8D8781CE1DA1EBE700660BA5 /* hgt2json-osx */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "hgt2json-osx"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D8781D11DA1EBE700660BA5 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		8D8781D81DA1EC0E00660BA5 /* AltitudeMatrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AltitudeMatrix.cpp; sourceTree = "<group>"; };
+		8D8781D91DA1EC0E00660BA5 /* AltitudeMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AltitudeMatrix.h; sourceTree = "<group>"; };
+		8D8781DA1DA1EC0E00660BA5 /* CommandLine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CommandLine.cpp; sourceTree = "<group>"; };
+		8D8781DB1DA1EC0E00660BA5 /* CommandLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandLine.h; sourceTree = "<group>"; };
+		8D8781DC1DA1EC0E00660BA5 /* CommonInclude.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonInclude.h; sourceTree = "<group>"; };
+		8D8781DD1DA1EC0E00660BA5 /* Dct.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Dct.cpp; sourceTree = "<group>"; };
+		8D8781DE1DA1EC0E00660BA5 /* Dct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dct.h; sourceTree = "<group>"; };
+		8D8781DF1DA1EC0E00660BA5 /* DEMMatrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DEMMatrix.cpp; sourceTree = "<group>"; };
+		8D8781E01DA1EC0E00660BA5 /* DEMMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEMMatrix.h; sourceTree = "<group>"; };
+		8D8781E11DA1EC0E00660BA5 /* GeoTiffReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GeoTiffReader.cpp; sourceTree = "<group>"; };
+		8D8781E21DA1EC0E00660BA5 /* GeoTiffReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoTiffReader.h; sourceTree = "<group>"; };
+		8D8781E31DA1EC0E00660BA5 /* HGTReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HGTReader.cpp; sourceTree = "<group>"; };
+		8D8781E41DA1EC0E00660BA5 /* HGTReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGTReader.h; sourceTree = "<group>"; };
+		8D8781E51DA1EC0E00660BA5 /* Matrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matrix.h; sourceTree = "<group>"; };
+		8D8781ED1DA1EC4600660BA5 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		8D8781EF1DA1EC6E00660BA5 /* libboost_filesystem.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_filesystem.dylib; path = ../../../../../../../usr/local/Cellar/boost/1.61.0_1/lib/libboost_filesystem.dylib; sourceTree = "<group>"; };
+		8D8781F01DA1EC6E00660BA5 /* libboost_regex.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_regex.dylib; path = ../../../../../../../usr/local/Cellar/boost/1.61.0_1/lib/libboost_regex.dylib; sourceTree = "<group>"; };
+		8D8781F11DA1EC6E00660BA5 /* libboost_system.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_system.dylib; path = ../../../../../../../usr/local/Cellar/boost/1.61.0_1/lib/libboost_system.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +60,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D8781F21DA1EC6E00660BA5 /* libboost_filesystem.dylib in Frameworks */,
+				8D8781F31DA1EC6E00660BA5 /* libboost_regex.dylib in Frameworks */,
+				8D8781F41DA1EC6E00660BA5 /* libboost_system.dylib in Frameworks */,
+				8D8781EE1DA1EC4600660BA5 /* Accelerate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +75,7 @@
 			children = (
 				8D8781D01DA1EBE700660BA5 /* hgt2json-osx */,
 				8D8781CF1DA1EBE700660BA5 /* Products */,
+				8D8781EC1DA1EC4600660BA5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,9 +90,34 @@
 		8D8781D01DA1EBE700660BA5 /* hgt2json-osx */ = {
 			isa = PBXGroup;
 			children = (
+				8D8781D81DA1EC0E00660BA5 /* AltitudeMatrix.cpp */,
+				8D8781D91DA1EC0E00660BA5 /* AltitudeMatrix.h */,
+				8D8781DA1DA1EC0E00660BA5 /* CommandLine.cpp */,
+				8D8781DB1DA1EC0E00660BA5 /* CommandLine.h */,
+				8D8781DC1DA1EC0E00660BA5 /* CommonInclude.h */,
+				8D8781DD1DA1EC0E00660BA5 /* Dct.cpp */,
+				8D8781DE1DA1EC0E00660BA5 /* Dct.h */,
+				8D8781DF1DA1EC0E00660BA5 /* DEMMatrix.cpp */,
+				8D8781E01DA1EC0E00660BA5 /* DEMMatrix.h */,
+				8D8781E11DA1EC0E00660BA5 /* GeoTiffReader.cpp */,
+				8D8781E21DA1EC0E00660BA5 /* GeoTiffReader.h */,
+				8D8781E31DA1EC0E00660BA5 /* HGTReader.cpp */,
+				8D8781E41DA1EC0E00660BA5 /* HGTReader.h */,
+				8D8781E51DA1EC0E00660BA5 /* Matrix.h */,
 				8D8781D11DA1EBE700660BA5 /* main.cpp */,
 			);
 			path = "hgt2json-osx";
+			sourceTree = "<group>";
+		};
+		8D8781EC1DA1EC4600660BA5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D8781EF1DA1EC6E00660BA5 /* libboost_filesystem.dylib */,
+				8D8781F01DA1EC6E00660BA5 /* libboost_regex.dylib */,
+				8D8781F11DA1EC6E00660BA5 /* libboost_system.dylib */,
+				8D8781ED1DA1EC4600660BA5 /* Accelerate.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +177,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D8781E71DA1EC0E00660BA5 /* CommandLine.cpp in Sources */,
+				8D8781EA1DA1EC0E00660BA5 /* GeoTiffReader.cpp in Sources */,
+				8D8781E61DA1EC0E00660BA5 /* AltitudeMatrix.cpp in Sources */,
+				8D8781EB1DA1EC0E00660BA5 /* HGTReader.cpp in Sources */,
 				8D8781D21DA1EBE700660BA5 /* main.cpp in Sources */,
+				8D8781E91DA1EC0E00660BA5 /* DEMMatrix.cpp in Sources */,
+				8D8781E81DA1EC0E00660BA5 /* Dct.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +280,11 @@
 		8D8781D61DA1EBE700660BA5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = /usr/local/Cellar/boost/1.61.0_1/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/boost/1.61.0_1/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -223,6 +292,11 @@
 		8D8781D71DA1EBE700660BA5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = /usr/local/Cellar/boost/1.61.0_1/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/boost/1.61.0_1/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
